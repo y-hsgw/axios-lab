@@ -1,13 +1,12 @@
 import React, { useCallback, useEffect } from "react";
 import { axios } from "./lib/axios";
-import qs from "qs";
+
+const params = {
+  key1: "a&b",
+  key2: "c d",
+};
 
 function App() {
-  const params = {
-    key1: "a&b",
-    key2: "c d",
-  };
-
   const axiosFetchTodo = useCallback(() => {
     axios.get("/todos/1", { params });
   }, []);
