@@ -23,7 +23,10 @@
       { "devDependencies": ["**/*.test.js", "**/*.spec.js"] }
     ]
   },
-  "import/resolver": {
-    // "typescript": {}
+  "settings": {
+    "import/resolver": {
+      "typescript": true,
+      "node": true
+    }
   }
 }
